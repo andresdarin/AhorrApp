@@ -1,4 +1,5 @@
 import heroImage from "@/assets/hero-finance.png";
+import heroTitle from "@/assets/db-title-1.png";
 import SummaryCards from "@/components/dashboard/SummaryCards";
 import IncomeExpenseChart from "@/components/dashboard/IncomeExpenseChart";
 import CategoryPie from "@/components/dashboard/CategoryPie";
@@ -9,20 +10,22 @@ const Index = () => {
     <div className="space-y-6">
       <header className="grid grid-cols-1 md:grid-cols-5 gap-4 md:gap-6 items-center">
         <div className="md:col-span-3">
-          <h1 className="text-2xl md:text-3xl font-extrabold tracking-tight">
-            Dashboard de control financiero
-          </h1>
-          <p className="mt-2 text-muted-foreground">
-            Resumen de ingresos, gastos, ahorros y tarjetas. Todo a la vista.
-          </p>
+          <img
+            src={heroTitle}
+            alt="Título AhorrApp"
+            className="w-full max-w-xs md:max-w-sm lg:max-w-md"
+            loading="lazy"
+          />
+
         </div>
         <aside className="md:col-span-2">
           <img
             src={heroImage}
-            alt="Ilustración isométrica de finanzas Lovable"
+            alt="Ilustración isométrica AhorrApp"
             loading="lazy"
-            className="w-full h-40 md:h-44 object-cover rounded-lg shadow"
+            className="w-3/4 h-auto object-contain rounded-lg mx-auto"
           />
+
         </aside>
       </header>
 
